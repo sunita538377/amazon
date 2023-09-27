@@ -1,0 +1,59 @@
+nav{
+    width: 100vw;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+
+    
+    
+
+    > main{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        font-size:1rem ;
+        font-weight: 700;
+        
+     div{
+            
+            > h1{
+                // color: white;
+                text-transform: uppercase;
+                margin: 1rem;
+            }
+            > div{
+                .icons:hover{
+                    color: aqua;
+                }
+            }
+
+            > a{
+                // color: white;
+                margin: 1rem;
+            
+
+                &:hover{
+                    color:white ;
+                }
+            }
+            input{
+                border-radius: 20px;
+                 background-color: white;
+                width:250px ;
+                height: 40px;
+                padding: 0 0 0 10px;
+                border: none;
+                color: black;
+            }
+            img{
+                width: 200px;
+                color: white;
+            }
+        }
+    }
+}
