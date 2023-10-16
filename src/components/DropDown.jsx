@@ -5,7 +5,7 @@ import { Dropdown, Space ,Button} from 'antd';
 
 const items = [
   {
-    label: <Link >Music</Link>,
+    label: <Link>Music</Link>,
     key: '0',
   },
   {
@@ -23,7 +23,7 @@ const DropDown = () => (
       items,
     }}
     trigger={['click']} 
-    style={{color:"white"}}
+    style={{color:"white" ,  backgroundColor: "black"}}
 
   >
     <a onClick={(e) => e.preventDefault()}>

@@ -7,10 +7,10 @@ nav{
     position: sticky;
     top: 0%;
     z-index: 10;
-
+    background-color: rgb(9, 10, 10);
+    color: white;
+    height: 72px;
     
-    
-
     > main{
         width: 100%;
         display: flex;
@@ -41,17 +41,17 @@ nav{
                     color:white ;
                 }
             }
-            input{
-                border-radius: 20px;
-                 background-color: white;
-                width:250px ;
-                height: 40px;
-                padding: 0 0 0 10px;
-                border: none;
-                color: black;
-            }
+            //  input{
+            //     border-radius: 20px;
+            //      background-color: white;
+            //     width:250px ;
+            //     height: 40px;
+            //     padding: 0 0 0 10px;
+            //     border: none;
+            //     color: black;
+            // }
             img{
-                width: 200px;
+                width: 150px;
                 color: white;
             }
         }

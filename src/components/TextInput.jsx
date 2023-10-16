@@ -1,8 +1,8 @@
-const TextInput = ({label,placeholder,className,value,setValue,labelClassName}) =>{
+const TextInput = ({label,value,setValue,labelClassName}) =>{
     return(
-        <div className={`textInputDiv flex flex-col space-y-2 w-full ${className}`}>
+        <div className="textInputDiv" style={{display:"flex" , flexDirection:"column", marginTop:"10px" , marginBottom:"10px", borderRadius:"5px"}}>
             <label for={label} className={`font-semibold ${labelClassName}`}>{label}</label>
-            <input type="text" placeholder={placeholder} className="p-3 border border-gray-400 border-solid rounded placeholder-gray-500" id={label}
+            <input type="text" style={{padding:"3px", border:"1px solid gray" , borderRadius:"3px"}} id={label}
                 value={value} onChange={(e)=>{
                     setValue(e.target.value);
                 }}
