@@ -3,7 +3,6 @@ import {BrowserRouter as Router , Routes , Route} from 'react-router-dom' ;
 import Home from './routes/Home';
 import Podcasts from './routes/Podcasts';
 import Library from './routes/Library';
-import Details from './routes/Details';
 import "./Styles/header.scss";
 import "./Styles/App.scss";
 import "./Styles/login.scss";
@@ -28,7 +27,6 @@ function App() {
           <Route path='/podcasts' element={<Podcasts/>}/>
           <Route path='/library' element={<Library/>}/>
           <Route path='/login' element={<Login/>}/>
-          <Route path='/details' element={<Details/>}/>
           <Route path='/sadSong' element={<SadSong/>}/>
           <Route path='/happySong' element={<HappySong/>}/>
           <Route path='/romanticSong' element={<RomanticSong/>}/>

@@ -19,16 +19,16 @@ function Home() {
   const [excitedIndex,setExcitedIndex]=useState(0);
 
 
-  function albumNext(){setAlbumIndex((pre)=>pre+4)}
-  function albumPre(){setAlbumIndex((pre)=> pre-4)}
-  function sadNext(){setSadIndex((pre)=>pre+4)}
-  function sadPre(){setSadIndex((pre)=> pre-4)} 
-  function happyNext(){setHappyIndex((pre)=>pre+4)}
-  function happyPre(){setHappyIndex((pre)=> pre-4)} 
-  function romanticNext(){setRomanticIndex((pre)=>pre+4)}
-  function romanticPre(){setRomanticIndex((pre)=> pre-4)} 
-  function excitedNext(){setExcitedIndex((pre)=>pre+4)}
-  function excitedPre(){setExcitedIndex((pre)=> pre-4)} 
+  function albumNext(){setAlbumIndex((pre)=>pre+1)}
+  function albumPre(){setAlbumIndex((pre)=> pre-1)}
+  function sadNext(){setSadIndex((pre)=>pre+1)}
+  function sadPre(){setSadIndex((pre)=> pre-1)} 
+  function happyNext(){setHappyIndex((pre)=>pre+1)}
+  function happyPre(){setHappyIndex((pre)=> pre-1)} 
+  function romanticNext(){setRomanticIndex((pre)=>pre+1)}
+  function romanticPre(){setRomanticIndex((pre)=> pre-1)} 
+  function excitedNext(){setExcitedIndex((pre)=>pre+1)}
+  function excitedPre(){setExcitedIndex((pre)=> pre-1)} 
     
   useEffect(()=>{
     const getData=async()=>{
@@ -94,12 +94,14 @@ function Home() {
 
       <div  style={{display:"flex" , justifyContent:"space-between" ,flexDirection:"row", width:"100%",border:"20px solid black"}}>
           {
-               sadSong.slice(sadIndex,sadIndex+7).map((item)=>{ 
+               sadSong.slice(sadIndex,sadIndex+7).map((item,index)=>{ 
                   return (
                       <Card
                           title={item.title}
                           name={item.artist[0]?.name}
                           imgUrl={item.thumbnail}
+                          item={item}
+                          index={index}
                       />
 
                   )
